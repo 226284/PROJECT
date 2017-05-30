@@ -16,6 +16,8 @@ public:
 	Magazyn();
 	virtual ~Magazyn();
 	//metody do obsługi magazynu
+	// dodaj towar
+	// usun towar
 private:
 	Towar tab[20];	// tablica zawierająca dane magazynowe
 };
