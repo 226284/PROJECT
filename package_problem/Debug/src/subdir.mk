@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/IMagazyn.cpp \
 ../src/Magazyn.cpp \
 ../src/Towar.cpp \
 ../src/main.cpp 
 
 OBJS += \
+./src/IMagazyn.o \
 ./src/Magazyn.o \
 ./src/Towar.o \
 ./src/main.o 
 
 CPP_DEPS += \
+./src/IMagazyn.d \
 ./src/Magazyn.d \
 ./src/Towar.d \
 ./src/main.d 

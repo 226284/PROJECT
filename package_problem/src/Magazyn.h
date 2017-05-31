@@ -7,19 +7,22 @@
 
 #ifndef MAGAZYN_H_
 #define MAGAZYN_H_
+#include "IMagazyn.h"
 #include "Towar.h"
 
 namespace std {
 
-class Magazyn: public Towar {
+class Magazyn: public IMagazyn{
 public:
-	Magazyn();
+	Magazyn(int rozmiar);
 	virtual ~Magazyn();
 	//metody do obsługi magazynu
-	// dodaj towar
-	// usun towar
+	virtual void dodaj(Towar przedmiot, int pole); 	// dodaje towar na podane pole tablicy
+	virtual void usun(int pole); 	// usuwa towar z podanego pola w tablicy
+	virtual void wyswietl();
 private:
-	Towar tab[20];	// tablica zawierająca dane magazynowe
+	Towar *tab;		// tablica zawierająca dane magazynowe
+	int ROZMIAR;	// przechowuje rozmiar tablicy
 };
 
 } /* namespace std */

@@ -9,13 +9,42 @@
 
 namespace std {
 
-Magazyn::Magazyn() {
-	// TODO Auto-generated constructor stub
-
+Magazyn::Magazyn(int rozmiar) {
+	tab = new Towar[rozmiar];
+	ROZMIAR = rozmiar;
 }
 
 Magazyn::~Magazyn() {
-	// TODO Auto-generated destructor stub
+	delete[] tab;
+}
+
+void Magazyn::dodaj(Towar przedmiot, int pole) {
+	if (pole >= 0 && pole < ROZMIAR) {
+		tab[pole] = przedmiot;
+	}
+	else {
+		cout << "Nieprawidłowa wartośc pola";
+	}
+}
+
+void Magazyn::usun(int pole) {
+	Towar tmp;
+
+	if (pole >= 0 && pole < ROZMIAR) {
+		tab[pole] = tmp;
+	}
+	else {
+		cout << "Nieprawidłowa wartość pola";
+	}
+}
+
+void Magazyn::wyswietl() {
+	int i;
+
+	for (i = 0; i < ROZMIAR; i++) {
+		cout << i+1 << ". ";
+		tab[i].wyswietl();
+	}
 }
 
 } /* namespace std */
