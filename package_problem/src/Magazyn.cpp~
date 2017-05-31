@@ -133,7 +133,7 @@ void Magazyn::sort3()
 			if(temp<tab[i].get_wartosc()/tab[i].get_masa() )
 			{	
 				cout<<tab[i].get_wartosc()/tab[i].get_masa()<<endl;
-				temp=tab[i].get_wartosc()/tab[i].get_masa();
+				temp=tab[i].get_wartosc()/tab[i].get_masa()
 				temp2=tab[i].get_wartosc();
 				pole=i;
 			}
