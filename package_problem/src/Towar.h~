@@ -14,7 +14,7 @@ namespace std {
 
 class Towar {
 public:
-	Towar(string nowa_nazwa = "brak", float nowa_wartosc = 0, float nowa_masa = 9999);
+	Towar(string nowa_nazwa = "brak", float nowa_wartosc = 0, float nowa_masa = 0);
 	virtual ~Towar();
 	// metody do obsługi towaru
 	void set_nazwa(string nowa_nazwa);

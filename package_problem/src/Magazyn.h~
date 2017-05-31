@@ -20,9 +20,9 @@ public:
 	virtual void dodaj(Towar przedmiot, int pole); 	// dodaje towar na podane pole tablicy
 	virtual void usun(int pole); 	// usuwa towar z podanego pola w tablicy
 	virtual void wyswietl();
-	void sort1();	// wedle ceny (najwieksza cena pierwsza)
-	void sort2();	// wedle masy (na poczatek najlzesze)
-	void sort3();   //stosunek cena/masa pierwszy
+	void sort1();
+	void sort2();
+	void sort3(); 
 private:
 	Towar *tab;		// tablica zawierająca dane magazynowe
 	int ROZMIAR;	// przechowuje rozmiar tablicy
