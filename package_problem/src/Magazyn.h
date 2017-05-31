@@ -11,7 +11,7 @@
 
 namespace std {
 
-class Magazyn {
+class Magazyn: public Towar {
 public:
 	Magazyn();
 	virtual ~Magazyn();

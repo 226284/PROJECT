@@ -7,9 +7,16 @@
 //============================================================================
 
 #include <iostream>
+#include "Towar.h"
+
 using namespace std;
 
 int main() {
-	cout << "Package problem" << endl; // prints Package problem
+	cout << "Knapsack problem" << endl;
+
+	Towar test("Naszyjnik", 123.89, 15);  // nazwa, cena, masa
+
+	test.wyswietl();
+
 	return 0;
 }
