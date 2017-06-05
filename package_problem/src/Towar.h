@@ -21,13 +21,13 @@ public:
 	void set_wartosc(float nowa_wartosc);
 	void set_masa(float nowa_masa);
 	string get_nazwa();
-	float get_wartosc();
-	float get_masa();
+	int get_wartosc();
+	int get_masa();
 	void wyswietl();
 private:
 	string nazwa;	// nazwa towaru
-	float wartosc; 	// wartość w [zł]
-	float masa;		// masa w [g]
+	int wartosc; 	// wartość w [zł]
+	int masa;		// masa w [g]
 	//int ilosc; 		// ilość towaru na magazynie
 };
 

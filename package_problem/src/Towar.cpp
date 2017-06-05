@@ -35,11 +35,11 @@ string Towar::get_nazwa(){
 	return nazwa;
 }
 
-float Towar::get_wartosc(){
+int Towar::get_wartosc(){
 	return wartosc;
 }
 
-float Towar::get_masa(){
+int Towar::get_masa(){
 	return masa;
 }
 

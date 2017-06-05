@@ -23,6 +23,8 @@ public:
 	void sort1();	// wedle ceny (najwieksza cena pierwsza)
 	void sort2();	// wedle masy (na poczatek najlzesze)
 	void sort3();   //stosunek cena/masa pierwszy
+	int max(int liczba1, int liczba2);
+	int knapsack(int wielkosc); // przyjmuje wielkość plecaka, pozostałe parametry są w amgazynie
 private:
 	Towar *tab;		// tablica zawierająca dane magazynowe
 	int ROZMIAR;	// przechowuje rozmiar tablicy
