@@ -1,0 +1,25 @@
+\frametitle{Algorytm \textit{Knapsack 0-1}}
+	\begin{lstlisting}[basicstyle=\tiny,tabsize=2]
+int Magazyn::knapsack(int wielkosc) {
+int i, j; // pomocnicze liczniki
+int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
+
+for (i = 0; i <= ROZMIAR; i++) {
+	for (j = 0; j <= wielkosc; j++) {
+		if (i == 0 || j == 0) { // zerowe indeksy wypelniamy zerami
+			tmp[i][j] = 0;
+		}
+		else if (tab[i - 1].get_masa() <= j) {
+			// znalezienie maksimum
+			tmp[i][j] = max(
+			tab[i - 1].get_wartosc() + tmp[i - 1][j - tab[i - 1].get_masa()],
+			tmp[i - 1][j]);
+		}
+		else { // zwykle przepisanie z wyzszego indeksu tablicy
+			tmp[i][j] = tmp[i - 1][j];
+		}
+	}
+}
+return tmp[ROZMIAR][wielkosc]; // zwrocenie maksymalnej wartosci
+}
+	\end{lstlisting}

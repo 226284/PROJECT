@@ -1,0 +1,85 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[MeX]{polski}
+\usepackage{graphicx}
+\usepackage{graphicx}
+\usepackage{listings}
+\usetheme{Warsaw}
+\usecolortheme{wolverine}
+\setbeamerfont{title}{family=\rm}
+\setbeamerfont{author}{family=\it}
+\title{Problem plecakowy}
+\subtitle{Projektowanie algorytmów i metod sztucznej inteligencji}
+\author{Michał Wieczorek, Artur Szafraniak}
+\institute{
+Automatyka i Robotyka,
+Wydział Elektroniki\\
+Politechnika Wrocławska}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Spis treści}
+\begin{frame}
+	\frametitle{Plan prezentacji}
+	\tableofcontents
+\end{frame}
+
+\section{Wprowadzenie}
+\subsection{Na czym polega ten problem}
+\begin{frame}
+	\frametitle{Na czym polega problem plecakowy}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{zlodziej2.png}
+	\end{figure}
+\end{frame}
+
+\section{Sposoby rozwiązania}
+\subsection{Algorytmy zachłanne}
+\begin{frame}
+	\frametitle{Rodzaje algorytmów zachłannych}
+	\begin{itemize}
+	\item Sortowanie według wartości towaru
+	\item Sortowanie według objętości
+	\item Sortowanie według współczynnika wartość/objętość
+	\end{itemize}
+\end{frame}
+
+\subsection{Algorytm Knapsack 0-1}
+\begin{frame}
+	\frametitle{Zasada działania}
+	Tu będzie opisa działania algorytmu
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{Algorytm \textit{Knapsack 0-1}}
+	\begin{lstlisting}[basicstyle=\tiny,tabsize=2]
+int Magazyn::knapsack(int wielkosc) {
+int i, j; // pomocnicze liczniki
+int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
+
+for (i = 0; i <= ROZMIAR; i++) {
+	for (j = 0; j <= wielkosc; j++) {
+		if (i == 0 || j == 0) { // zerowe indeksy wypelniamy zerami
+			tmp[i][j] = 0;
+		}
+		else if (tab[i - 1].get_masa() <= j) {
+			// znalezienie maksimum
+			tmp[i][j] = max(
+			tab[i - 1].get_wartosc() + tmp[i - 1][j - tab[i - 1].get_masa()],
+			tmp[i - 1][j]);
+		}
+		else { // zwykle przepisanie z wyzszego indeksu tablicy
+			tmp[i][j] = tmp[i - 1][j];
+		}
+	}
+}
+return tmp[ROZMIAR][wielkosc]; // zwrocenie maksymalnej wartosci
+}
+	\end{lstlisting}
+\end{frame}
+
+\end{document}
