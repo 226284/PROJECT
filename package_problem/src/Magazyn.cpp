@@ -141,7 +141,7 @@ int Magazyn::max(int liczba1, int liczba2) {
 	return liczba2;
 }
 
-int Magazyn::knapsack(int wielkosc) {
+void Magazyn::knapsack(int wielkosc) {
 	int i, j; // pomocnicze liczniki
 	int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
 
@@ -153,7 +153,8 @@ int Magazyn::knapsack(int wielkosc) {
 			else if (tab[i - 1].get_masa() <= j) {
 				// znalezienie maksimum
 				tmp[i][j] = max(
-						tab[i - 1].get_wartosc() + tmp[i - 1][j - tab[i - 1].get_masa()],
+						tab[i - 1].get_wartosc()
+								+ tmp[i - 1][j - tab[i - 1].get_masa()],
 						tmp[i - 1][j]);
 			}
 			else { // zwykłe przepisanie z wyższego indeksu tablicy
@@ -161,7 +162,29 @@ int Magazyn::knapsack(int wielkosc) {
 			}
 		}
 	}
-	return tmp[ROZMIAR][wielkosc]; // zwrócenie maksymalnej wartości
+	i = ROZMIAR;
+	j = wielkosc;
+
+	cout << tmp[ROZMIAR][wielkosc];
+
+	while ((i & j) > 0) {
+		if (tmp[i][j] != tmp[i - 1][j]) {
+			plecak.push_back(tab[i]);
+			j = j - tab[i].get_wartosc();
+			i = i - 1;
+		}
+		else {
+			i = i - 1;
+		}
+	}
+}
+
+void Magazyn::wyswietl_knap() {
+
+	for (list<Towar>::iterator iter = plecak.begin(); iter != plecak.end();
+			iter++) {
+		plecak.front().wyswietl();
+	}
 }
 
 } /* namespace std */

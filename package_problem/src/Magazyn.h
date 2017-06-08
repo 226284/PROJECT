@@ -7,6 +7,7 @@
 
 #ifndef MAGAZYN_H_
 #define MAGAZYN_H_
+#include <list>
 #include "IMagazyn.h"
 #include "Towar.h"
 
@@ -24,9 +25,11 @@ public:
 	void sort2();	// wedle masy (na poczatek najlzesze)
 	void sort3();   //stosunek cena/masa pierwszy
 	int max(int liczba1, int liczba2);
-	int knapsack(int wielkosc); // przyjmuje wielkość plecaka, pozostałe parametry są w amgazynie
+	void knapsack(int wielkosc); // przyjmuje wielkość plecaka, pozostałe parametry są w amgazynie
+	void wyswietl_knap();
 private:
 	Towar *tab;		// tablica zawierająca dane magazynowe
+	list<Towar> plecak;
 	int ROZMIAR;	// przechowuje rozmiar tablicy
 	int towar_ilosc;	// ile mamy towaru na składzie
 };
