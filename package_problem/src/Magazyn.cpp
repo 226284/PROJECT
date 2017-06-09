@@ -150,11 +150,11 @@ void Magazyn::knapsack(int wielkosc) {
 			if (i == 0 || j == 0) { // zerowe indeksy wypełniamy zerami
 				tmp[i][j] = 0;
 			}
-			else if (tab[i - 1].get_masa() <= j) {
+			else if (tab[i].get_masa() <= j) {
 				// znalezienie maksimum
 				tmp[i][j] = max(
-						tab[i - 1].get_wartosc()
-								+ tmp[i - 1][j - tab[i - 1].get_masa()],
+						tab[i].get_wartosc()
+								+ tmp[i - 1][j - tab[i].get_masa()],
 						tmp[i - 1][j]);
 			}
 			else { // zwykłe przepisanie z wyższego indeksu tablicy
@@ -162,15 +162,21 @@ void Magazyn::knapsack(int wielkosc) {
 			}
 		}
 	}
+	// pomocnicze wyświetlanie zawartości tablicy
+/*	for (i = 0; i <= ROZMIAR; i++) {
+		for (j = 0; j <= wielkosc; j++) {
+			cout << tmp[i][j] << " ";
+		}
+		cout << endl;
+	}*/
+
 	i = ROZMIAR;
 	j = wielkosc;
 
-	cout << tmp[ROZMIAR][wielkosc];
-
-	while ((i & j) > 0) {
+	while (i > 0 && j > 0) {
 		if (tmp[i][j] != tmp[i - 1][j]) {
 			plecak.push_back(tab[i]);
-			j = j - tab[i].get_wartosc();
+			j = j - tab[i].get_masa();
 			i = i - 1;
 		}
 		else {
@@ -183,7 +189,7 @@ void Magazyn::wyswietl_knap() {
 
 	for (list<Towar>::iterator iter = plecak.begin(); iter != plecak.end();
 			iter++) {
-		plecak.front().wyswietl();
+		iter->wyswietl();
 	}
 }
 
