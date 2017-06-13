@@ -2,10 +2,10 @@
 \usepackage[utf8]{inputenc}
 \usepackage[MeX]{polski}
 \usepackage{graphicx}
-\usepackage{graphicx}
 \usepackage{listings}
+\usepackage{array}
 \usetheme{Warsaw}
-\usecolortheme{wolverine}
+\usecolortheme[rgb={0,0.5,1}]{structure}
 \setbeamerfont{title}{family=\rm}
 \setbeamerfont{author}{family=\it}
 \title{Problem plecakowy}
@@ -51,35 +51,77 @@ Politechnika Wrocławska}
 \subsection{Algorytm Knapsack 0-1}
 \begin{frame}
 	\frametitle{Zasada działania}
-	Tu będzie opisa działania algorytmu
+	
 \end{frame}
 
 \begin{frame}[fragile]
 	\frametitle{Algorytm \textit{Knapsack 0-1}}
 	\begin{lstlisting}[basicstyle=\tiny,tabsize=2]
-int Magazyn::knapsack(int wielkosc) {
-int i, j; // pomocnicze liczniki
-int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
+void Magazyn::knapsack(int wielkosc) {
+	int i, j; // pomocnicze liczniki
+	int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
 
-for (i = 0; i <= ROZMIAR; i++) {
-	for (j = 0; j <= wielkosc; j++) {
-		if (i == 0 || j == 0) { // zerowe indeksy wypelniamy zerami
-			tmp[i][j] = 0;
-		}
-		else if (tab[i - 1].get_masa() <= j) {
-			// znalezienie maksimum
-			tmp[i][j] = max(
-			tab[i - 1].get_wartosc() + tmp[i - 1][j - tab[i - 1].get_masa()],
-			tmp[i - 1][j]);
-		}
-		else { // zwykle przepisanie z wyzszego indeksu tablicy
-			tmp[i][j] = tmp[i - 1][j];
+	for (i = 0; i <= ROZMIAR; i++) {
+		for (j = 0; j <= wielkosc; j++) {
+			if (i == 0 || j == 0) { // zerowe indeksy wypelniamy zerami
+				tmp[i][j] = 0;
+			}
+			else if (tab[i].get_masa() <= j) {
+				// znalezienie maksimum
+				tmp[i][j] = max(
+						tab[i].get_wartosc()
+								+ tmp[i - 1][j - tab[i].get_masa()],
+						tmp[i - 1][j]);
+			}
+			else { // zwykle przepisanie z wyzszego indeksu tablicy
+				tmp[i][j] = tmp[i - 1][j];
+			}
 		}
 	}
-}
-return tmp[ROZMIAR][wielkosc]; // zwrocenie maksymalnej wartosci
-}
 	\end{lstlisting}
 \end{frame}
 
+\subsection{Wybieranie elementów do plecaka}
+\begin{frame}[fragile]
+\frametitle{Wybieranie elementów do plecaka}
+\begin{lstlisting}[basicstyle=\small, tabsize=2]
+	i = ROZMIAR;
+	j = wielkosc;
+
+	while (i > 0 && j > 0) {
+		if (tmp[i][j] != tmp[i - 1][j]) {
+			plecak.push_back(tab[i]);
+			j = j - tab[i].get_masa();
+			i = i - 1;
+		}
+		else {
+			i = i - 1;
+		}
+	}
+	
+\end{lstlisting}
+\end{frame}
+\begin{frame}
+\begin{table}[]
+\begin{tabular}{|c|c|c|}
+\hline
+Nazwa        & Waga & Wartość	\\ \hline
+Pierościonek & 3    & 7 	\\ \hline
+Naszyjnik    & 4    & 9 	\\ \hline
+Kolczyki     & 2    & 5 	\\ \hline
+Zegarek      & 5    & 8 	\\ \hline
+\end{tabular}
+\end{table}
+\begin{table}[]
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+V{[}i,w{]} & w=0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+i=0        & \onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0} &\onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0}   \\ \hline
+1          & \onslide<2->{0} &   &   &   &   &   \\ \hline
+2         & \onslide<2->{0} &   &   &   &   &   \\ \hline
+3          & \onslide<2->{0} &   &   &   &   &   \\ \hline
+4          & \onslide<2->{0} &   &   &   &   &   \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
 \end{document}

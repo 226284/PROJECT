@@ -23,8 +23,13 @@
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\slideentry {3}{2}{2}{6/6}{Algorytm Knapsack 0-1}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@partpages {1}{6}}
-\headcommand {\beamer@subsectionpages {5}{6}}
-\headcommand {\beamer@sectionpages {4}{6}}
-\headcommand {\beamer@documentpages {6}}
-\headcommand {\def \inserttotalframenumber {6}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{7}{Wybieranie element\IeC {\'o}w do plecaka}}\headcommand {\beamer@subsectionpages {5}{6}}
+\headcommand {\slideentry {3}{3}{1}{7/7}{Wybieranie element\IeC {\'o}w do plecaka}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\slideentry {3}{3}{2}{8/9}{Wybieranie element\IeC {\'o}w do plecaka}{0}}
+\headcommand {\beamer@framepages {8}{9}}
+\headcommand {\beamer@partpages {1}{9}}
+\headcommand {\beamer@subsectionpages {7}{9}}
+\headcommand {\beamer@sectionpages {4}{9}}
+\headcommand {\beamer@documentpages {9}}
+\headcommand {\def \inserttotalframenumber {8}}

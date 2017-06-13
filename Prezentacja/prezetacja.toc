@@ -5,3 +5,4 @@
 \beamer@sectionintoc {3}{Sposoby rozwi\IeC {\k a}zania}{4}{0}{3}
 \beamer@subsectionintoc {3}{1}{Algorytmy zach\IeC {\l }anne}{4}{0}{3}
 \beamer@subsectionintoc {3}{2}{Algorytm Knapsack 0-1}{5}{0}{3}
+\beamer@subsectionintoc {3}{3}{Wybieranie element\IeC {\'o}w do plecaka}{7}{0}{3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.24)  8 JUN 2017 00:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.24)  13 JUN 2017 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,6 +1081,14 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen192
+\extrarowheight=\dimen193
+\NC@list=\toks46
+\extratabsurround=\skip57
+\backup@length=\skip58
+)
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemeWarsaw.
 sty
 Package: beamerthemeWarsaw 2010/06/17  (rcs-revision d02a7cf4d8ae)
@@ -1105,9 +1113,9 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ale.sty
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemewo
-lverine.sty
-Package: beamercolorthemewolverine 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemest
+ructure.sty
+Package: beamercolorthemestructure 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ) (./prezetacja.aux)
 \openout1 = `prezetacja.aux'.
 
@@ -1170,16 +1178,16 @@ LaTeX Font Info:    ... okay on input line 19.
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count161
-\scratchdimen=\dimen192
+\scratchdimen=\dimen194
 \scratchbox=\box55
 \nofMPsegments=\count162
 \nofMParguments=\count163
-\everyMPshowfont=\toks46
+\everyMPshowfont=\toks47
 \MPscratchCnt=\count164
-\MPscratchDim=\dimen193
+\MPscratchDim=\dimen195
 \MPnumerator=\count165
 \makeMPintoPDFobject=\count166
-\everyMPtoPDFconversion=\toks47
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1297,7 +1305,7 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10.95> not available
 ] (./prezetacja.toc)
 [2
 
-] <zlodziej2.png, id=130, 737.44897pt x 553.08673pt>
+] <zlodziej2.png, id=136, 737.44897pt x 553.08673pt>
 File: zlodziej2.png Graphic file (type png)
  <use zlodziej2.png>
 Package pdftex.def Info: zlodziej2.png used on input line 38.
@@ -1322,8 +1330,8 @@ LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              for symbol `textbraceleft' on input line 3.
 
 
-Overfull \hbox (6.36739pt too wide) in paragraph at lines 5--7
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (14.01756pt too wide) in paragraph at lines 5--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 LaTeX Font Info:    Try loading font information for OML+cmss on input line 7.
@@ -1333,44 +1341,71 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
 (Font)              for symbol `textless' on input line 7.
 
-LaTeX Font Info:    Try loading font information for OML+plm on input line 12.
+LaTeX Font Info:    Try loading font information for OML+plm on input line 16.
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 16.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 12.
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 16.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 12.
+(Font)              <6> on input line 16.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 12.
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+(Font)              <5> on input line 16.
+LaTeX Font Info:    Try loading font information for U+msa on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <6> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 12.
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <5> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 12.
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 16.
 )
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 83.
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 82.
  [6
+
+]
+\openout4 = `prezetacja.vrb'.
+
+
+(./prezetacja.vrb
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10> on input line 7.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <7> on input line 7.
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <10> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <7> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 7.
+) [7
+
+]
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10.95> on input line 126.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 126.
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <8> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 126.
+
+ [8
+
+] [9
 
 ]
 \tf@nav=\write6
@@ -1382,42 +1417,44 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <14.4> not available
 \tf@snm=\write8
 \openout8 = `prezetacja.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
-
-(./prezetacja.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+ (./prezetacja.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `prezetacja.out' has not changed.
-(rerunfilecheck)             Checksum: 424AA5B99E9FEA28EB291CD8C093B34E;363.
+(rerunfilecheck)             Checksum: 5C08088470231BCA72934BD704998A33;446.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 18868 strings out of 494877
- 349844 string characters out of 6179086
- 439775 words of memory out of 5000000
- 21687 multiletter control sequences out of 15000+600000
- 13876 words of font info for 41 fonts, out of 8000000 for 9000
+ 18982 strings out of 494877
+ 351534 string characters out of 6179086
+ 438633 words of memory out of 5000000
+ 21782 multiletter control sequences out of 15000+600000
+ 21646 words of font info for 65 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
- 48i,19n,62p,417b,1316s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,19n,62p,417b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texliv
 e/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl
-/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/p
-l/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi12.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy6.pfb>
-Output written on prezetacja.pdf (6 pages, 105987 bytes).
+ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi12.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/pl/plsy6.pfb>
+Output written on prezetacja.pdf (9 pages, 133261 bytes).
 PDF statistics:
- 297 PDF objects out of 1000 (max. 8388607)
- 258 compressed objects within 3 object streams
- 19 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
