@@ -163,12 +163,12 @@ void Magazyn::knapsack(int wielkosc) {
 		}
 	}
 	// pomocnicze wyświetlanie zawartości tablicy
-/*	for (i = 0; i <= ROZMIAR; i++) {
+	for (i = 0; i <= ROZMIAR; i++) {
 		for (j = 0; j <= wielkosc; j++) {
 			cout << tmp[i][j] << " ";
 		}
 		cout << endl;
-	}*/
+	}
 
 	i = ROZMIAR;
 	j = wielkosc;
