@@ -4,6 +4,8 @@
 \usepackage{graphicx}
 \usepackage{listings}
 \usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
 \usetheme{Warsaw}
 \usecolortheme[rgb={0,0.5,1}]{structure}
 \setbeamerfont{title}{family=\rm}
@@ -49,11 +51,6 @@ Politechnika Wrocławska}
 \end{frame}
 
 \subsection{Algorytm Knapsack 0-1}
-\begin{frame}
-	\frametitle{Zasada działania}
-	
-\end{frame}
-
 \begin{frame}[fragile]
 	\frametitle{Algorytm \textit{Knapsack 0-1}}
 	\begin{lstlisting}[basicstyle=\tiny,tabsize=2]
@@ -81,6 +78,31 @@ void Magazyn::knapsack(int wielkosc) {
 	\end{lstlisting}
 \end{frame}
 
+\begin{frame}
+	\frametitle{Przykład}
+\begin{table}[]
+\begin{tabular}{|c|c|c|}
+\hline
+Nazwa        & Waga & Wartość	\\ \hline
+Kolczyki     & 3 	&  100 	\\ \hline
+Pierościonek & 2    & 20 	\\ \hline
+Naszyjnik    & 4    & 60 	\\ \hline
+Zegarek      & 1    & 40 	\\ \hline
+\end{tabular}
+\end{table}
+\begin{table}[]
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+tmp{[}i,j{]} & j=0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+i=0        & \onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0} &\onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0}   \\ \hline
+1          & \onslide<2->{0} & \onslide<3->{0} & \onslide<4->{0} & \onslide<5->{100} & \onslide<6->{100} & \onslide<7->{100} \\ \hline
+2         & \onslide<2->{0} & \onslide<8->{0} & \onslide<9->{20} & \onslide<10->{100} & \onslide<11->{100} & \onslide<12->{100} \\ \hline
+3          & \onslide<2->{0} & \onslide<13->{0} & \onslide<14->{20} & \onslide<15->{100} & \onslide<16->{100} & \onslide<17->{120} \\ \hline
+4          & \onslide<2->{0} & \onslide<18->{40} & \onslide<19->{40} & \onslide<20->{100} & \onslide<21->{140} & \onslide<22->{140} \\ \hline
+\end{tabular}
+\end{table}
+\end{frame}
+
 \subsection{Wybieranie elementów do plecaka}
 \begin{frame}[fragile]
 \frametitle{Wybieranie elementów do plecaka}
@@ -101,27 +123,30 @@ void Magazyn::knapsack(int wielkosc) {
 	
 \end{lstlisting}
 \end{frame}
+
 \begin{frame}
+	\frametitle{Przykład }
 \begin{table}[]
 \begin{tabular}{|c|c|c|}
 \hline
 Nazwa        & Waga & Wartość	\\ \hline
-Kolczyki     & 2    & 5 	\\ \hline
-Pierościonek & 3    & 7 	\\ \hline
-Naszyjnik    & 4    & 9 	\\ \hline
-Zegarek      & 5    & 8 	\\ \hline
+Kolczyki     & 3 	&  100 	\\ \hline
+Pierościonek & 2    & 20 	\\ \hline
+Naszyjnik    & 4    & 60 	\\ \hline
+Zegarek      & 1    & 40 	\\ \hline
 \end{tabular}
 \end{table}
 \begin{table}[]
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
-V{[}i,w{]} & w=0 & 1 & 2 & 3 & 4 & 5 \\ \hline
-i=0        & \onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0} &\onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0}   \\ \hline
-1          & \onslide<2->{0} &   &   &   &   &   \\ \hline
-2         & \onslide<2->{0} &   &   &   &   &   \\ \hline
-3          & \onslide<2->{0} &   &   &   &   &   \\ \hline
-4          & \onslide<2->{0} &   &   &   &   &   \\ \hline
+tmp{[}i,j{]} & j=0 & 1 & 2 & 3 & 4 & 5 \\ \hline
+i=0        & 0 & 0 & 0 & 0 & 0 & 0  \\ \hline
+1          & 0 & 0 & 0 & 100 & 100 & 100  \\ \hline
+2          & 0 & 0 & 20 & 100 & 100 & 100  \\ \hline
+3          & 0 & 0 & 20 & 100 & 100 & 120  \\ \hline
+4          & 0 & 40 & 40 & 100 & 140 & 140  \\ \hline
 \end{tabular}
 \end{table}
 \end{frame}
+
 \end{document}
