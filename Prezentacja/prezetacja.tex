@@ -6,6 +6,7 @@
 \usepackage{array}
 \usepackage{xcolor}
 \usepackage{colortbl}
+\usepackage{subfig}
 \usetheme{Warsaw}
 \usecolortheme[rgb={0,0.5,1}]{structure}
 \setbeamerfont{title}{family=\rm}
@@ -84,10 +85,14 @@ void Magazyn::knapsack(int wielkosc) {
 \begin{tabular}{|c|c|c|}
 \hline
 Nazwa        & Waga & Wartość	\\ \hline
-Kolczyki     & 3 	&  100 	\\ \hline
-Pierościonek & 2    & 20 	\\ \hline
-Naszyjnik    & 4    & 60 	\\ \hline
-Zegarek      & 1    & 40 	\\ \hline
+\alt<3-7>{\color{blue}Kolczyki}{\color{black}Kolczyki} & \alt<3-7>{\color{blue}3}{\color{black}3} &
+\alt<3-7>{\color{blue}100}{\color{black}100} 	\\ \hline
+\alt<8-12>{\color{blue}Pierscionek}{\color{black}Pierscionek} & \alt<8-12>{\color{blue}2}{\color{black}2} & 
+\alt<8-12>{\color{blue}20}{\color{black}20} 	\\ \hline
+\alt<13-17>{\color{blue}Naszyjnik}{\color{black}Naszyjnik} & \alt<13-17>{\color{blue}4}{\color{black}4} & 
+\alt<13-17>{\color{blue}60}{\color{black}60} 	\\ \hline
+\alt<18-22>{\color{blue}Zegarek}{\color{black}Zegarek} & \alt<18-22>{\color{blue}1}{\color{black}1} & 
+\alt<18-22>{\color{blue}40}{\color{black}40}	\\ \hline
 \end{tabular}
 \end{table}
 \begin{table}[]
@@ -130,23 +135,41 @@ i=0        & \onslide<2->{0} & \onslide<2->{0} & \onslide<2->{0} &\onslide<2->{0
 \begin{tabular}{|c|c|c|}
 \hline
 Nazwa        & Waga & Wartość	\\ \hline
-Kolczyki     & 3 	&  100 	\\ \hline
+\alt<11->{\cellcolor{green}Kolczyki}{\color{black}Kolczyki}     & \alt<12->{\color{blue}3}{\color{black}3} 	&  100 	\\ \hline
 Pierościonek & 2    & 20 	\\ \hline
 Naszyjnik    & 4    & 60 	\\ \hline
-Zegarek      & 1    & 40 	\\ \hline
+\alt<3->{\cellcolor{green}Zegarek}{\color{black}Zegarek} & 
+\alt<4>{\color{blue}1}{\color{black}1} & 40 	\\ \hline
 \end{tabular}
 \end{table}
 \begin{table}[]
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline
 tmp{[}i,j{]} & j=0 & 1 & 2 & 3 & 4 & 5 \\ \hline
-i=0        & 0 & 0 & 0 & 0 & 0 & 0  \\ \hline
-1          & 0 & 0 & 0 & 100 & 100 & 100  \\ \hline
-2          & 0 & 0 & 20 & 100 & 100 & 100  \\ \hline
-3          & 0 & 0 & 20 & 100 & 100 & 120  \\ \hline
-4          & 0 & 40 & 40 & 100 & 140 & 140  \\ \hline
+i=0        & \alt<13->{\color{blue}0}{\color{black}0} & 0 & 0 & 0 & \alt<10-12>{\color{red}0}{\color{black}0} & 0  \\ \hline
+1          & 0 & 0 & 0 & 100 & \alt<8-12>{\color{blue}100}{\color{black}100} & 100  \\ \hline
+2          & 0 & 0 & 20 & 100 & \alt<6-8>{\color{red}100}{\color{black}100} & 100  \\ \hline
+3          & 0 & 0 & 20 & 100 & \alt<5-6>{\color{blue}100}{\color{black}100} & \alt<2-4>{\color{red}120}{\color{black}120}  \\ \hline
+4          & 0 & 40 & 40 & 100 & 140 & \alt<1-4>{\color{blue}140}{\color{black}140}  \\ \hline
 \end{tabular}
 \end{table}
 \end{frame}
 
+\begin{frame}
+\frametitle{Przykład }
+Ostatecznie w plecaku znalazły się:
+
+\begin{figure}
+\subfloat[Kolczyki \label{fig:1}]{
+    \includegraphics[width=0.25\textwidth]{kolczyki.png}}
+\subfloat[Zegarek \label{fig:2}]{
+    \includegraphics[width=0.45\textwidth]{zegarek.png}}
+\end{figure}
+
+\end{frame}
+\begin{frame}
+\centering
+\frametitle{Zakończenie}
+Dziękujemy za uwagę :)
+\end{frame}
 \end{document}
