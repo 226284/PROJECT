@@ -54,8 +54,7 @@ void Magazyn::sort1(Plecak & pl_podany	) {
 	Towar towar;
 	float temp = 0;
 	int pole = 0;
-	cout << "zaczynaM" << endl;
-	for (int j = 0; j < ROZMIAR; j++) 
+	for (int j = 0; j < ROZMIAR-1; j++) 
 	{
 		for (int i = 0; i < ROZMIAR; i++) 
 		{
@@ -72,62 +71,42 @@ void Magazyn::sort1(Plecak & pl_podany	) {
 	}
 }
 
-void Magazyn::sort2() {
-	float* plecak = new float[ROZMIAR];
+void Magazyn::sort2(Plecak & pl_podany) {
 
-	float temp_kasa = 0;
+	Towar towar;
 	float temp_masa = 10000;
 	int pole = 0;
-	cout << "zaczynaM" << endl;
-	for (int j = 0; j < ROZMIAR; j++) {
+	for (int j = 0; j < ROZMIAR-1; j++) {
 		for (int i = 0; i < ROZMIAR; i++) {
 			if (temp_masa > tab[i].get_masa()) {
 				temp_masa = tab[i].get_masa();
-				temp_kasa = tab[i].get_wartosc();
 				pole = i;
-				cout << "jest wieksze" << i << endl;
+				towar=tab[i];
 			}
 		}
-
-		cout << j << endl;
-		plecak[j] = temp_kasa;
+		pl_podany.dodaj(towar);
 		this->usun(pole);
 		temp_masa = 10000;
-		this->wyswietl();
 	}
 
-	cout << "po wszystkim" << endl;
-	this->wyswietl();
-	for (int i = 0; i < ROZMIAR; i++) {
-		cout << plecak[i] << endl;
-	}
+
 
 }
-void Magazyn::sort3() {
-	float* plecak = new float[ROZMIAR];
-
+void Magazyn::sort3(Plecak & pl_podany) {
+	Towar towar;
 	float temp = 0;
-	float temp2 = 0;
 	int pole = 0;
-	cout << "zaczynaM" << endl;
-	for (int j = 0; j < ROZMIAR; j++) {
+	for (int j = 0; j < ROZMIAR-1; j++) {
 		for (int i = 0; i < ROZMIAR; i++) {
 			if (temp < tab[i].get_wartosc() / tab[i].get_masa()) {
-				cout << tab[i].get_wartosc() / tab[i].get_masa() << endl;
 				temp = tab[i].get_wartosc() / tab[i].get_masa();
-				temp2 = tab[i].get_wartosc();
 				pole = i;
+				towar=tab[i];
 			}
 		}
-		plecak[j] = temp2;
+		pl_podany.dodaj(towar);
 		this->usun(pole);
 		temp = 0;
-	}
-
-	cout << "po wszystkin" << endl;
-	this->wyswietl();
-	for (int i = 0; i < ROZMIAR; i++) {
-		cout << plecak[i] << endl;
 	}
 
 }
@@ -139,7 +118,7 @@ int Magazyn::max(int liczba1, int liczba2) {
 	return liczba2;
 }
 
-void Magazyn::knapsack(int wielkosc) {
+void Magazyn::knapsack(int wielkosc,Plecak & pl_podany) {
 	int i, j; // pomocnicze liczniki
 	int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
 
@@ -174,6 +153,7 @@ void Magazyn::knapsack(int wielkosc) {
 	while (i > 0 && j > 0) {
 		if (tmp[i][j] != tmp[i - 1][j]) {
 			plecak.push_back(tab[i]);
+			pl_podany.dodaj(tab[i]);
 			j = j - tab[i].get_masa();
 			i = i - 1;
 		}

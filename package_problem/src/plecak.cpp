@@ -30,10 +30,10 @@ void Plecak::dodaj(Towar obiekt)
 
 void Plecak::wyswietl()
 {
-	cout<<"poczatek"<<endl;
+	cout<<"Wyswietlam zawartosc plecaka: "<<endl;
 	for (list<Towar>::iterator iter = pl.begin(); iter != pl.end();
 			iter++) {
 		iter->wyswietl();
 	}
-	cout<<"koniec"<<endl;
+
 }

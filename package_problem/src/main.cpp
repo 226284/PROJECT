@@ -53,10 +53,11 @@ void czytaj(string nazwa) {
 }
 
 int main() {
-	Plecak plecak(5);
+	Plecak plecak1(7);
+	Plecak plecak2(7);
 	cout << "Knapsack problem" << endl;
 	// wprowadzane dane:
-	int wielkosc_plecaka = 5;
+	int wielkosc_plecaka = 7;
 	string o = "dane.txt";
 	czytaj(o);
 	string li = "123";
@@ -80,12 +81,13 @@ int main() {
 	cout << endl << "**********************************************************************" << endl;
 
 	// wykonanie algorytmu 1-0
-	jubiler.knapsack(wielkosc_plecaka);
+	jubiler.knapsack(wielkosc_plecaka,plecak2);
 
 	cout << "Zawartość plecaka: " << endl;
 	jubiler.wyswietl_knap();
-	jubiler.sort1(plecak);
-	plecak.wyswietl();
+	jubiler.sort3(plecak1);
+	plecak1.wyswietl();
+	plecak2.wyswietl();
 
 	return 0;
 }
