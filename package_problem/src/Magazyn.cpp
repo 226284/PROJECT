@@ -6,6 +6,7 @@
  */
 
 #include "Magazyn.h"
+#include "plecak.h"
 #include <algorithm> 
 
 namespace std {
@@ -49,28 +50,25 @@ void Magazyn::wyswietl() {
 	}
 }
 
-void Magazyn::sort1() {
-	float* plecak = new float[ROZMIAR];
-
+void Magazyn::sort1(Plecak & pl_podany	) {
+	Towar towar;
 	float temp = 0;
 	int pole = 0;
 	cout << "zaczynaM" << endl;
-	for (int j = 0; j < ROZMIAR; j++) {
-		for (int i = 0; i < ROZMIAR; i++) {
-			if (temp < tab[i].get_wartosc()) {
+	for (int j = 0; j < ROZMIAR; j++) 
+	{
+		for (int i = 0; i < ROZMIAR; i++) 
+		{
+			if (temp < tab[i].get_wartosc()) 
+			{
 				temp = tab[i].get_wartosc();
 				pole = i;
+				towar=tab[i];
 			}
 		}
-		plecak[j] = temp;
+		pl_podany.dodaj(towar);
 		this->usun(pole);
 		temp = 0;
-	}
-
-	cout << "po wszystkin" << endl;
-	this->wyswietl();
-	for (int i = 0; i < ROZMIAR; i++) {
-		cout << plecak[i] << endl;
 	}
 }
 

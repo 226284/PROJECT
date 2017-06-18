@@ -7,21 +7,18 @@ CPP_SRCS += \
 ../src/IMagazyn.cpp \
 ../src/Magazyn.cpp \
 ../src/Towar.cpp \
-../src/plecak.cpp \
 ../src/main.cpp 
 
 OBJS += \
 ./src/IMagazyn.o \
 ./src/Magazyn.o \
 ./src/Towar.o \
-./src/plecak.o \
 ./src/main.o 
 
 CPP_DEPS += \
 ./src/IMagazyn.d \
 ./src/Magazyn.d \
 ./src/Towar.d \
-./src/plecak.d \
 ./src/main.d 
 
 

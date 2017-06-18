@@ -14,6 +14,7 @@
 #include <utility>
 #include "Towar.h"
 #include "Magazyn.h"
+#include "plecak.h"
 
 using namespace std;
 
@@ -52,6 +53,7 @@ void czytaj(string nazwa) {
 }
 
 int main() {
+	Plecak plecak(5);
 	cout << "Knapsack problem" << endl;
 	// wprowadzane dane:
 	int wielkosc_plecaka = 5;
@@ -82,6 +84,8 @@ int main() {
 
 	cout << "Zawartość plecaka: " << endl;
 	jubiler.wyswietl_knap();
+	jubiler.sort1(plecak);
+	plecak.wyswietl();
 
 	return 0;
 }
