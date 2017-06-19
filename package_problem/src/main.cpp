@@ -15,7 +15,7 @@
 #include "Towar.h"
 #include "Magazyn.h"
 #include "plecak.h"
-#include "SDL2/SDL.h"
+#include "SDL/SDL.h"
 
 using namespace std;
 
@@ -81,7 +81,17 @@ int main() {
 	cout<<"DZIALAM"<<endl;
 	jubiler.wyswietl();
 	SDL_Init( SDL_INIT_EVERYTHING );
-	
+	SDL_Surface * ekran = NULL;
+	SDL_Surface * obraz = NULL;
+
+	ekran = SDL_SetVideoMode( 1024, 576, 32, SDL_SWSURFACE | SDL_DOUBLEBUF );
+	obraz = SDL_LoadBMP( "tlo.bmp" );
+		SDL_ShowCursor( SDL_DISABLE );
+	   	SDL_BlitSurface( obraz, NULL, ekran, NULL );
+
+    SDL_Flip( ekran );
+    SDL_Delay( 2000 );
+    SDL_Quit();
 
 /*
 	Plecak plecak1(7);
