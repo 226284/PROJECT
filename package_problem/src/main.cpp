@@ -15,6 +15,7 @@
 #include "Towar.h"
 #include "Magazyn.h"
 #include "plecak.h"
+#include <SDL/SDL.h>
 
 using namespace std;
 
@@ -29,30 +30,60 @@ vector<string> explode(string const & s, char delim) {
 	return result;
 }
 
-void czytaj(string nazwa) {
+void czytaj(string nazwa, Magazyn & jubiler) {
+
+	int temp1=0;
+	int temp2=0;
+	int x=0;
 	vector<string> tab;
 	cout << nazwa << endl;
 	fstream plik;
 	plik.open(nazwa.c_str(), ios::in);
-	if (plik.good()) {
+	if (plik.good())
+	{
 		string napis;
 		cout << "Zawartosc pliku:" << endl;
-		while (!plik.eof()) {
+		while (!plik.eof()) 
+		{
 			getline(plik, napis);
 
-			tab = explode(napis, ' ');
-			for (unsigned int i = 0; i < tab.size(); i++) {
-				cout << tab[i] << " ";
+			if(napis!="")
+			{
+				tab = explode(napis, ' ');
+				for (unsigned int i = 0; i < tab.size(); i++)
+				{
+					cout << tab[i] << " ";
+				}
+				temp1=stoi(tab[1]);
+				temp2=stoi(tab[2]);
+				Towar towar(tab[0],temp1,temp2);
+				jubiler.dodaj(towar,x);
+				++x;
 			}
-			cout << endl;
+			
+		
 		}
+	}	
+		else
+		{	
+			cout << "Error! Nie udalo otworzyc sie pliku!" << endl;
+		}
+
 		plik.close();
-	}
-	else
-		cout << "Error! Nie udalo otworzyc sie pliku!" << endl;
+	
+
 }
 
 int main() {
+	Magazyn jubiler(5);
+
+	czytaj("dane.txt",jubiler);
+	cout<<"DZIALAM"<<endl;
+	jubiler.wyswietl();
+
+	
+
+/*
 	Plecak plecak1(7);
 	Plecak plecak2(7);
 	cout << "Knapsack problem" << endl;
@@ -88,6 +119,6 @@ int main() {
 	jubiler.sort3(plecak1);
 	plecak1.wyswietl();
 	plecak2.wyswietl();
-
+*/
 	return 0;
 }
