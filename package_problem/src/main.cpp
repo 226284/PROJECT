@@ -80,7 +80,7 @@ int main() {
 	czytaj("dane.txt",jubiler);
 	cout<<"DZIALAM"<<endl;
 	jubiler.wyswietl();
-
+	/*SDL_Init( SDL_INIT_EVERYTHING );*/
 	
 
 /*
