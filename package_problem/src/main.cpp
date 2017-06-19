@@ -15,7 +15,7 @@
 #include "Towar.h"
 #include "Magazyn.h"
 #include "plecak.h"
-#include <SDL/SDL.h>
+#include "SDL2/SDL.h"
 
 using namespace std;
 
