@@ -1,7 +1,7 @@
 \beamer@endinputifotherversion {3.36pt}
 \beamer@sectionintoc {1}{Spis tre\IeC {\'s}ci}{2}{0}{1}
 \beamer@sectionintoc {2}{Wprowadzenie}{3}{0}{2}
-\beamer@subsectionintoc {2}{1}{Na czym polega ten problem}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Opis problemu}{3}{0}{2}
 \beamer@sectionintoc {3}{Sposoby rozwi\IeC {\k a}zania}{4}{0}{3}
 \beamer@subsectionintoc {3}{1}{Algorytmy zach\IeC {\l }anne}{4}{0}{3}
 \beamer@subsectionintoc {3}{2}{Algorytm Knapsack 0-1}{5}{0}{3}

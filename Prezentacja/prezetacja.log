@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.24)  16 JUN 2017 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.24)  20 JUN 2017 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,12 +1358,49 @@ Package pdftex.def Info: zlodziej2.png used on input line 41.
 
 [3
 
- <./zlodziej2.png>] [4
+ <./zlodziej2.png>]
+LaTeX Font Info:    Try loading font information for OML+plm on input line 55.
+ (/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
+File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMS+plsy on input line 55.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
+File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    Try loading font information for OMX+plex on input line 55.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
+File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+)
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <10.95> on input line 55.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <8> on input line 55.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <6> on input line 55.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <8> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 55.
+LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <6> not available
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 55.
+ [4
 
 ]
 \openout4 = `prezetacja.vrb'.
 
- (./prezetacja.vrb
+
+(./prezetacja.vrb
 LaTeX Font Info:    Try loading font information for OMS+cmss on input line 3.
 LaTeX Font Info:    No file OMScmss.fd. on input line 3.
 
@@ -1384,59 +1421,20 @@ LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
 (Font)              for symbol `textless' on input line 7.
 
-LaTeX Font Info:    Try loading font information for OML+plm on input line 16.
-(/usr/share/texlive/texmf-dist/tex/latex/polski/omlplm.fd
-File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMS+plsy on input line 16.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/polski/omsplsy.fd
-File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    Try loading font information for OMX+plex on input line 16.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/polski/omxplex.fd
-File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <6> on input line 16.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <5> on input line 16.
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <6> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <5> not available
 (Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 16.
 )
 LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <14.4> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 80.
+(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 83.
  [5
 
-]
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 109.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 109.
-LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <8> not available
-(Font)              Font shape `OT4/cmss/m/sl' tried instead on input line 109.
-
- [6
+] [6
 
 ] [7
 
-]
-[8
+] [8
 
 ] [9
 
@@ -1460,14 +1458,14 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <8> not available
 
 ] [19
 
-] [20
+]
+[20
 
 ] [21
 
 ] [22
 
-]
-[23
+] [23
 
 ] [24
 
@@ -1495,14 +1493,14 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <7> not available
 
 ] [30
 
-] [31
+]
+[31
 
 ] [32
 
 ] [33
 
-]
-[34
+] [34
 
 ] [35
 
@@ -1519,16 +1517,16 @@ LaTeX Font Info:    Font shape `OT4/cmss/m/it' in size <7> not available
 ] [41
 
 ]
-<kolczyki.png, id=1405, 301.125pt x 381.425pt>
+<kolczyki.png, id=1407, 301.125pt x 381.425pt>
 File: kolczyki.png Graphic file (type png)
  <use kolczyki.png>
-Package pdftex.def Info: kolczyki.png used on input line 169.
+Package pdftex.def Info: kolczyki.png used on input line 172.
 (pdftex.def)             Requested size: 76.82246pt x 97.30573pt.
 
-<zegarek.png, id=1407, 301.125pt x 200.75pt>
+<zegarek.png, id=1409, 301.125pt x 200.75pt>
 File: zegarek.png Graphic file (type png)
  <use zegarek.png>
-Package pdftex.def Info: zegarek.png used on input line 169.
+Package pdftex.def Info: zegarek.png used on input line 172.
 (pdftex.def)             Requested size: 138.2795pt x 92.18988pt.
  [42
 
@@ -1544,45 +1542,47 @@ Package pdftex.def Info: zegarek.png used on input line 169.
 \tf@snm=\write8
 \openout8 = `prezetacja.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./prezetacja.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `prezetacja.out' has not changed.
-(rerunfilecheck)             Checksum: 950D13391157B8BCFF4F761FA3ED82CC;447.
+(rerunfilecheck)             Checksum: 424C66D05C1E874F5AE0C95465B5912A;434.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
  ) 
 Here is how much of TeX's memory you used:
  20305 strings out of 494877
  374460 string characters out of 6179086
- 463762 words of memory out of 5000000
+ 463736 words of memory out of 5000000
  23018 multiletter control sequences out of 15000+600000
  22135 words of font info for 66 fonts, out of 8000000 for 9000
  56 hyphenation exceptions out of 8191
  48i,19n,62p,417b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/pl/plms.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/pl/plss10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/pl/plss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/pl/plss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss9.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/pl/plssi12.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/pl/plsy6.pfb>
-Output written on prezetacja.pdf (43 pages, 303929 bytes).
+e/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/share/texlive/texmf-dist/fonts/e
+nc/dvips/pl/plmi.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/pl/plmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/pl/plr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl
+/plss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plss12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/pl/plss8.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/pl/plss9.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/pl/plssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/pl/plssi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi8.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/pl/plsy6.pfb>
+Output written on prezetacja.pdf (43 pages, 310031 bytes).
 PDF statistics:
- 1548 PDF objects out of 1728 (max. 8388607)
- 1453 compressed objects within 15 object streams
+ 1557 PDF objects out of 1728 (max. 8388607)
+ 1460 compressed objects within 15 object streams
  96 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
