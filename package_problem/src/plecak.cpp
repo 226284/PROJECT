@@ -37,3 +37,23 @@ void Plecak::wyswietl()
 	}
 
 }
+
+int* Plecak::zwroc_numery()
+{
+	int i=0;
+	int* tab= new int(pl.size());
+	cout<<"Wyswietlam zawartosc plecaka: "<<endl;
+	for (list<Towar>::iterator iter = pl.begin(); iter != pl.end();	iter++) 
+	{
+		tab[i]=iter->get_numer();
+		iter->wyswietl();
+		i++;
+	}
+	return tab;
+
+}
+
+int Plecak::zwroc_rozmiar()
+{
+	return pl.size();
+}

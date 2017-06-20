@@ -27,12 +27,10 @@ public:
 	void sort3(Plecak & plecak);   //stosunek cena/masa pierwszy
 	int max(int liczba1, int liczba2);
 	void knapsack(int wielkosc,Plecak & plecak); // przyjmuje wielkość plecaka, pozostałe parametry są w amgazynie
-	void wyswietl_knap();
+
 private:
 	Towar *tab;		// tablica zawierająca dane magazynowe
-	list<Towar> plecak;
 	int ROZMIAR;	// przechowuje rozmiar tablicy
-	int towar_ilosc;	// ile mamy towaru na składzie
 };
 
 } /* namespace std */
