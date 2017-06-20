@@ -9,11 +9,10 @@
 
 namespace std {
 
-Towar::Towar(string nowa_nazwa, float nowa_wartosc, float nowa_masa, int nowy_numer) {
+Towar::Towar(string nowa_nazwa, float nowa_wartosc, float nowa_masa) {
 	nazwa = nowa_nazwa;
 	wartosc = nowa_wartosc;
 	masa = nowa_masa;
-	numer = nowy_numer;
 }
 
 Towar::~Towar() {
@@ -44,15 +43,10 @@ int Towar::get_masa(){
 	return masa;
 }
 
-int Towar::get_numer(){
-	return numer;
-}
-
 void Towar::wyswietl(){
 	cout << "Nazwa: " << nazwa << " | ";
 	cout << "Cena: " << wartosc << "zł" << " | ";
-	cout << "Masa: " << masa << "g" << " | ";
-	cout << "Numer przedmiotu: " << numer<< endl;
+	cout << "Masa: " << masa << "g" << endl;
 }
 
 } /* namespace std */

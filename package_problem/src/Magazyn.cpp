@@ -14,7 +14,6 @@ namespace std {
 Magazyn::Magazyn(int rozmiar) {
 	tab = new Towar[rozmiar];
 	ROZMIAR = rozmiar;
-	towar_ilosc = 0;
 }
 
 Magazyn::~Magazyn() {
@@ -152,7 +151,6 @@ void Magazyn::knapsack(int wielkosc,Plecak & pl_podany) {
 
 	while (i > 0 && j > 0) {
 		if (tmp[i][j] != tmp[i - 1][j]) {
-			plecak.push_back(tab[i]);
 			pl_podany.dodaj(tab[i]);
 			j = j - tab[i].get_masa();
 			i = i - 1;
@@ -163,12 +161,6 @@ void Magazyn::knapsack(int wielkosc,Plecak & pl_podany) {
 	}
 }
 
-void Magazyn::wyswietl_knap() {
 
-	for (list<Towar>::iterator iter = plecak.begin(); iter != plecak.end();
-			iter++) {
-		iter->wyswietl();
-	}
-}
 
 } /* namespace std */

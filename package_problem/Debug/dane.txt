@@ -1,5 +1,6 @@
-naszyjnik 122 3
-Kolczyki 100 3
-Pierścionek 20 2
-Naszyjnik 60 4
-Zegarek 40 1
+pierscionek 20 2
+pierscionek2 50 4
+zegarek1 60 4
+zegarek2 120 9
+kolczyki 100 3
+

@@ -23,6 +23,8 @@ class Plecak
 	Plecak(int masa_podana);
 	void dodaj(Towar obiekt);
 	void wyswietl();
+	int* zwroc_numery();
+	int zwroc_rozmiar();
 
 };
 
