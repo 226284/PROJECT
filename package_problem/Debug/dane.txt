@@ -3,4 +3,6 @@ pierscionek2 50 4
 zegarek1 60 4
 zegarek2 120 9
 kolczyki 100 3
-
+lancuszek 75 4
+naszyjnik 50 3
+naszyjnik2 170 10
