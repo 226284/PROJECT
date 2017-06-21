@@ -8,5 +8,3 @@
 	./package_problem
 
 * pliki z kodem źródłowym znajdują się w folderze src
-
-// Algorytmy na razie możesz pisać w Magazynie, chyba że masz jakiś pomysł na nową klasę to spoko
