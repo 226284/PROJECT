@@ -210,7 +210,7 @@ int main() {
 	string spr="";
 
 	SDL_Init( SDL_INIT_EVERYTHING );
-	ekran = SDL_SetVideoMode( 1024, 576, 32, SDL_SWSURFACE | SDL_DOUBLEBUF );
+	ekran = SDL_SetVideoMode( 1241, 576, 32, SDL_SWSURFACE | SDL_DOUBLEBUF );
 	obraz = SDL_LoadBMP( "tlo.bmp" );
 	dlon = SDL_LoadBMP("dlon.bmp");
 	menu = SDL_LoadBMP("menu.bmp");
