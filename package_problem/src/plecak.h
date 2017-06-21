@@ -25,6 +25,7 @@ class Plecak
 	void wyswietl();
 	int* zwroc_numery();
 	int zwroc_rozmiar();
+	int zwroc_wartosc();
 
 };
 

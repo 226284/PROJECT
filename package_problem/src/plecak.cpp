@@ -50,7 +50,18 @@ int* Plecak::zwroc_numery()
 		i++;
 	}
 	return tab;
+}
 
+int Plecak::zwroc_wartosc()
+{
+	int wartosc=0;
+
+	cout<<"Wyswietlam zawartosc plecaka: "<<endl;
+	for (list<Towar>::iterator iter = pl.begin(); iter != pl.end();	iter++) 
+	{
+		wartosc+=iter->get_wartosc();
+	}
+	return wartosc;
 }
 
 int Plecak::zwroc_rozmiar()
