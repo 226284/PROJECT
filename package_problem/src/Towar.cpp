@@ -32,6 +32,13 @@ void Towar::set_masa(float nowa_masa){
 	masa = nowa_masa;
 }
 
+void Towar::nadaj(string nowa_nazwa, float nowa_wartosc, float nowa_masa, int nowy_numer){
+	nazwa = nowa_nazwa;
+	masa = nowa_masa;
+	wartosc = nowa_wartosc;
+	numer = nowy_numer;
+}
+
 string Towar::get_nazwa(){
 	return nazwa;
 }

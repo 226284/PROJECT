@@ -150,7 +150,8 @@ int main() {
 		}
 	
 	}
-
+/* czyszczenie 
+*/
 	menu.clean();
 	dlon.clean();
 	tlo.clean();

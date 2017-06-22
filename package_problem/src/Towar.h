@@ -26,6 +26,7 @@ public:
 	int get_masa();
 	int get_numer();
 	void wyswietl();
+	void nadaj(string nowa_nazwa,float nowa_wartosc,float nowa_masa, int numer);
 private:
 	string nazwa;	// nazwa towaru
 	int wartosc; 	// wartość w [zł]
