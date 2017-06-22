@@ -8,21 +8,24 @@ CPP_SRCS += \
 ../src/Magazyn.cpp \
 ../src/Towar.cpp \
 ../src/main.cpp \
-../src/plecak.cpp 
+../src/plecak.cpp \
+../src/rysuj.cpp \
 
 OBJS += \
 ./src/IMagazyn.o \
 ./src/Magazyn.o \
 ./src/Towar.o \
 ./src/main.o \
-./src/plecak.o 
+./src/plecak.o \
+./src/rysuj.o \
 
 CPP_DEPS += \
 ./src/IMagazyn.d \
 ./src/Magazyn.d \
 ./src/Towar.d \
 ./src/main.d \
-./src/plecak.d 
+./src/plecak.d \
+./src/rysuj.d \
 
 
 # Each subdirectory must supply rules for building sources it contributes
