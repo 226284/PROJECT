@@ -9,7 +9,9 @@ CPP_SRCS += \
 ../src/Towar.cpp \
 ../src/main.cpp \
 ../src/plecak.cpp \
-../src/rysuj.cpp \
+../src/Obiekt_SDL.cpp \
+../src/Obsluga_SDL.cpp \
+
 
 OBJS += \
 ./src/IMagazyn.o \
@@ -17,7 +19,9 @@ OBJS += \
 ./src/Towar.o \
 ./src/main.o \
 ./src/plecak.o \
-./src/rysuj.o \
+./src/Obiekt_SDL.o \
+../src/Obsluga_SDL.o \
+
 
 CPP_DEPS += \
 ./src/IMagazyn.d \
@@ -25,14 +29,16 @@ CPP_DEPS += \
 ./src/Towar.d \
 ./src/main.d \
 ./src/plecak.d \
-./src/rysuj.d \
+./src/Obiekt_SDL.d \
+../src/Obsluga_SDL.d \
+
 
 
 # Each subdirectory must supply rules for building sources it contributes
 src/%.o: ../src/%.cpp
 	@echo 'Building file: $<'
 	@echo 'Invoking: GCC C++ Compiler'
-	g++ -O0 -g3 -Wall -c -fmessage-length=0 -std=c++11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	g++ -O0 -std=c++14 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

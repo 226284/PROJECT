@@ -20,12 +20,14 @@ class Plecak
 	int masa;	// dopuszczalna masa
 	
 	public:
+	~Plecak();
 	Plecak(int masa_podana);
 	void dodaj(Towar obiekt);
 	void wyswietl();
 	int* zwroc_numery();
 	int zwroc_rozmiar();
 	int zwroc_wartosc();
+	void oproznij();
 
 };
 

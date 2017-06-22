@@ -1,0 +1,3 @@
+src/Towar.d: ../src/Towar.cpp ../src/Towar.h
+
+../src/Towar.h:

@@ -14,6 +14,11 @@ Plecak::Plecak(int masa_podana)
 	masa=masa_podana;
 }
 
+Plecak::~Plecak()
+{
+	pl.clear();
+}
+
 void Plecak::dodaj(Towar obiekt)
 {
 	if(masa>=obiekt.get_masa())
@@ -68,3 +73,5 @@ int Plecak::zwroc_rozmiar()
 {
 	return pl.size();
 }
+
+
