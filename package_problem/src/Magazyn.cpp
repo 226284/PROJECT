@@ -118,31 +118,23 @@ int Magazyn::max(int liczba1, int liczba2) {
 }
 
 void Magazyn::knapsack(int wielkosc,Plecak & pl_podany) {
-	Towar *tablica=new Towar[9];	//knapsack potrzebuje innej tablicy
-	tablica[1].nadaj("pierscionek", 20, 2,0);
-	tablica[2].nadaj("pierscionek2",50,4,1);
-	tablica[3].nadaj("zegarek1",60,4,2);
-	tablica[4].nadaj("zegarek2",120,9,3);
-	tablica[5].nadaj("kolczyki",100,3,4);
-	tablica[6].nadaj("lancuszek",75,4,5);
-	tablica[7].nadaj("naszyjnik",50,3,6);
-	tablica[8].nadaj("naszyjnik2",170,10,7);
+
 
 	
 		
 	int i, j; // pomocnicze liczniki
-	int tmp[ROZMIAR + 1][wielkosc + 1]; // tablica pomocnicza do przechowywania danych
+	int tmp[ROZMIAR + 1][wielkosc + 1]; // tab pomocnicza do przechowywania danych
 
 	for (i = 0; i <= ROZMIAR; i++) {
 		for (j = 0; j <= wielkosc; j++) {
 			if (i == 0 || j == 0) { // zerowe indeksy wypełniamy zerami
 				tmp[i][j] = 0;
 			}
-			else if (tablica[i].get_masa() <= j) {
+			else if (tab[i].get_masa() <= j) {
 				// znalezienie maksimum
 				tmp[i][j] = max(
-						tablica[i].get_wartosc()
-								+ tmp[i - 1][j - tablica[i].get_masa()],
+						tab[i].get_wartosc()
+								+ tmp[i - 1][j - tab[i].get_masa()],
 						tmp[i - 1][j]);
 			}
 			else { // zwykłe przepisanie z wyższego indeksu tablicy
@@ -163,15 +155,15 @@ void Magazyn::knapsack(int wielkosc,Plecak & pl_podany) {
 
 	while (i > 0 && j > 0) {
 		if (tmp[i][j] != tmp[i - 1][j]) {
-			pl_podany.dodaj(tablica[i]);
-			j = j - tablica[i].get_masa();
+			pl_podany.dodaj(tab[i]);
+			j = j - tab[i].get_masa();
 			i = i - 1;
 		}
 		else {
 			i = i - 1;
 		}
 	}
-	delete []tablica;
+	delete []tab;
 }
 
 
